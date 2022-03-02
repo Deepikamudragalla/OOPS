@@ -1,0 +1,53 @@
+STRUCTURE IN C :
+they can have pointers,structures,arrays as members.
+LIMITATION :
+1.   C doesnt allow structures to be treated as built in data types
+     For example:
+     struct num
+     {
+      int num;
+      float deci;
+      };
+struct num n1,n2,n3;
+n1=n2+n3 is illegal in C. 
+
+2. Data hiding is not supported,members of a structure are public.Means structure members can be accessed by any fn anywhere in the scope through structure variables
+
+EXTENSIONS TO STRUCTURES :
+c++ not only supports all features of structures provided in C ,but also have extensions
+it tries to bring user def data types close to built in data types
+*data hiding also supported
+*inheritance ,where one type inherits characters of other type is also supported
+*functions can also be members of structures
+*they can be declared private ,so they cant be accessed by external functions
+*in cpp,structure names are stand alone
+eg:
+struct student{};
+student A //valid
+
+*all these features can also be found in other userdef data type called class(only diff b/w str and class is that by default mem of class are pvt but str are public)
+
+CLASS :
+By defining a class, we are creating a new abstract data type that can be treated like built in data type.
+->key words public and private are known as visibility labels ,these are followed by a colon.
+-> a completely hidden class (all private) is of no use.
+-> private mem can be accessed within class.
+->data members are usually private and member fns are public
+->defining class similar to structure only provides a template not memory space.
+->declaring objects to class is similar to declaring variables of any other data type
+
+Syntax to call a member fn out side class;
+objectname.fnname(actual parameters);
+
+->declaring public data members should be avoided bcoz it violates datahiding..
+
+//DEFINING MEMBER FUNCTIONS :
+2 ways:
+->outside class : returntype classname :: fnname(argument declaration)
+*several classes can have same fn name (membership variable will take care of it)
+*mem fn can call other mem fn directly without using dot operator
+->inside class:
+*fn declaration replaced with fn definition
+*treated as inline fns(all restrictions applicable to inline are applicable here too)
+(same code for function body and same task in both ways)
+->subtle diff in function header
