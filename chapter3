@@ -1,0 +1,22 @@
+Hare krishna
+
+3.Tokens,Expressions and control structures
+
+ansi c only first 32 characters,
+c++ has no limit on name length -> all characters in name are significant.
+
+L 'ab' wide-character constant.****(wide-char constant)
+
+c++ data types are of 3 types:user-defined:str,union,class,enum
+                              (basic or fundamental)built-in:integral,void,floating type
+                              derived:array,fn,pointer,reference
+
+void :
+1st type: void func1(void)
+2nd type: void*gp;(generic pointer)
+          int *ip;
+          gp=ip;//correct
+           ip=gp;// correct in c wrong in c++
+            ip=(int*)gp;
+          *ip=*gp;//ILLEGAL as generic pointer cant be dereferenced
+we can assign any type of pointer to void pointer without typecasting.
