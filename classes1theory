@@ -51,3 +51,6 @@ objectname.fnname(actual parameters);
 *treated as inline fns(all restrictions applicable to inline are applicable here too)
 (same code for function body and same task in both ways)
 ->subtle diff in function header
+
+******One of the main principles of OOP is to hide implementation details from class definition,so its a good practice to define member fns outside class definition
+->they can be made inline by :         inline returntype classname :: fnname(argument declaration)
