@@ -1,3 +1,4 @@
+//executes all tasks using menu based user interface
 #include<iostream>
 using namespace std;
 const int n = 10;
